@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OncoFila – Solução Inteligente para Gestão Oncológica</title>
+  <style>
+    :root {
+      --primary: #14A3B3;
+      --secondary: #F48C44;
+      --tertiary: #F8F8F8;
+      --white: #ffffff;
+      --dark: #1d1d1d;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--tertiary);
+      color: var(--dark);
+    }
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: var(--secondary);
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: var(--white);
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    section h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--secondary);
+    }
+    ul li {
+      margin-bottom: 0.6rem;
+    }
+    .simulador {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+      margin-top: 2rem;
+    }
+    label, select, button {
+      font-size: 1rem;
+      margin-top: 1rem;
+      display: block;
+    }
+    select, button {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 100%;
+    }
+    button {
+      background-color: var(--primary);
+      color: var(--white);
+      cursor: pointer;
+    }
+    #resultado {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: var(--secondary);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--primary);
+      color: var(--white);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>OncoFila</h1>
+    <p>Transformando faltas em cuidado com inteligência e tecnologia</p>
+  </header>
+
+  <nav>
+    <a href="#solucao">Solução</a>
+    <a href="#ia">IA de Substituição</a>
+    <a href="#app">App do Paciente</a>
+    <a href="#dashboard">Dashboard</a>
+  </nav>
+
+  <main>
+    <section id="solucao">
+      <h2>🔍 A Solução</h2>
+      <p>O OncoFila é uma plataforma digital integrada para transformar a gestão oncológica pública. Atua de forma inteligente em três frentes fundamentais:</p>
+      <div class="cards">
+        <div class="card">
+          <h3>💡 IA de Substituição</h3>
+          <p>Evita desperdícios ao propor substitutos ideais em tempo real com base em critérios clínicos e logísticos.</p>
+        </div>
+        <div class="card">
+          <h3>📱 App para o Paciente</h3>
+          <p>Oferece confirmação de presença, lembretes, conteúdo educativo e mais transparência no cuidado.</p>
+        </div>
+        <div class="card">
+          <h3>📊 Dashboard do Gestor</h3>
+          <p>Permite decisões baseadas em dados: taxas de absenteísmo, reaproveitamento, previsão de demanda e alertas.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="ia">
+      <h2>🤖 IA de Substituição Inteligente</h2>
+      <p>Acionada automaticamente após uma falta, nossa IA avalia os pacientes em fila com base em:</p>
+      <ul>
+        <li>✅ Similaridade do procedimento</li>
+        <li>💊 Compatibilidade com medicação preparada</li>
+        <li>🚨 Urgência e gravidade clínica</li>
+        <li>📍 Proximidade geográfica</li>
+        <li>📈 Histórico de comparecimento</li>
+      </ul>
+      <p>Com base em um score ponderado, o sistema indica o melhor paciente para substituição, notificando automaticamente todos os envolvidos.</p>
+    </section>
+
+    <section id="app">
+      <h2>📱 App para o Paciente</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>✅ Confirmação Digital</h3>
+          <p>Pacientes recebem alertas e podem confirmar ou remarcar direto no app.</p>
+        </div>
+        <div class="card">
+          <h3>🔔 Lembretes Inteligentes</h3>
+          <p>Notificações por geolocalização e horário reduzem o risco de faltas.</p>
+        </div>
+        <div class="card">
+          <h3>📚 Conteúdo Educativo</h3>
+          <p>Vídeos e instruções personalizadas ajudam na preparação para os tratamentos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dashboard">
+      <h2>📊 Dashboard Gerencial</h2>
+      <p>Ferramenta analítica para o gestor visualizar e tomar decisões com base em dados atualizados:</p>
+      <ul>
+        <li>📉 Monitoramento de absenteísmo e atrasos</li>
+        <li>📦 Controle do reaproveitamento de medicamentos</li>
+        <li>📊 Previsão de demanda e ocupação de slots</li>
+        <li>📑 Relatórios e evidências para prestação de contas</li>
+      </ul>
+    </section>
+
+    <section id="funcionamento" class="simulador">
+  <h2>⚙️ Aspectos Técnicos do Funcionamento</h2>
+  <ul>
+    <li><strong>Integração em tempo real:</strong> A IA recebe eventos do sistema de agendamento via API/webhook sempre que uma ausência é registrada.</li>
+    <li><strong>Pré-processamento:</strong> Dados do paciente, histórico, localização e perfil clínico são coletados e normalizados.</li>
+    <li><strong>Filtragem de candidatos:</strong> Algoritmos de clusterização e regras de negócio eliminam pacientes inelegíveis (ex: restrições clínicas, indisponibilidade).</li>
+    <li><strong>Rankeamento multicritério:</strong> Algoritmo supervisionado pondera fatores como urgência, distância, risco e flexibilidade de agenda, gerando um score para cada candidato.</li>
+    <li><strong>Recomendação:</strong> O paciente com maior score é selecionado e notificado automaticamente via integração com sistemas de comunicação (SMS, app, telefone).</li>
+    <li><strong>Aprendizado contínuo:</strong> O modelo é ajustado periodicamente com base nos resultados (comparecimento, satisfação, tempo de resposta), melhorando a assertividade.</li>
+    <li><strong>Segurança e privacidade:</strong> Todos os dados trafegam de forma criptografada e seguem normas de LGPD.</li>
+  </ul>
+</section>
+
+          <section class="simulador">
+        <h2 for="motivo">Simule uma ausência:</h2>
+        <select id="motivo">
+        <option value="urgencia">Emergência médica</option>
+          <option value="transporte">Problema de transporte</option>
+          <option value="esquecimento">Esquecimento</option>
+          <option value="efeitos">Efeitos colaterais graves</option>
+          <option value="internacao">Internação inesperada</option>
+          <option value="falta_medicamento">Falta de medicamento no hospital</option>
+          <option value="exames">Exames pendentes</option>
+          <option value="familia">Problemas familiares</option>
+          <option value="clinica">Condição clínica instável</option>
+          <option value="outro">Outro</option>
+        </select>
+        <button onclick="simularSubstituicao()">Simular Substituição</button>
+        <div class="sim-result" id="simResult"></div>
+        <div id="simTableWrap" class="sim-table-wrap"></div>
+      </section>
+
+  </main>
+
+  <footer>
+    © 2025 OncoFila – IA em Saúde com Propósito | Alinhado à ODS 3 e 12
+  </footer>
+
+  <script>
+        // Tabs das etapas
+    const tabs = document.querySelectorAll('.step-tab');
+    const contents = document.querySelectorAll('.step-content');
+    tabs.forEach((tab, idx) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        contents[idx].classList.add('active');
+      });
+    });
+
+    // Dados simulados de pacientes
+    const pacientes = [
+      {
+        nome: 'Maria',
+        urgencia: 9,
+        distancia: 2,
+        risco: 8,
+        flex: 7,
+        historico: 9,
+        tratamento: 'Quimioterapia',
+        medicamento: 'X',
+        estagio: 'Indução'
+      },
+      {
+        nome: 'Carlos',
+        urgencia: 7,
+        distancia: 1,
+        risco: 7,
+        flex: 8,
+        historico: 8,
+        tratamento: 'Quimioterapia',
+        medicamento: 'Y',
+        estagio: 'Consolidação'
+      },
+      {
+        nome: 'Fernanda',
+        urgencia: 6,
+        distancia: 4,
+        risco: 6,
+        flex: 9,
+        historico: 10,
+        tratamento: 'Imunoterapia',
+        medicamento: 'X',
+        estagio: 'Manutenção'
+      },
+      {
+        nome: 'João',
+        urgencia: 5,
+        distancia: 3,
+        risco: 7,
+        flex: 10,
+        historico: 7,
+        tratamento: 'Quimioterapia',
+        medicamento: 'Y',
+        estagio: 'Indução'
+      }
+    ];
+
+    function simularSubstituicao() {
+      const motivo = document.getElementById('motivo').value;
+      let criterio = '';
+      let pesos = { urgencia: 1, distancia: 1, risco: 1, flex: 1, historico: 1, tratamento: 1, medicamento: 1, estagio: 1 };
+      let resumo = '';
+      let filtro = () => true;
+      if (motivo === 'urgencia') {
+        criterio = 'Prioridade para urgência clínica, risco e estágio inicial do tratamento';
+        pesos = { urgencia: 2, distancia: 1, risco: 2, flex: 1, historico: 1, tratamento: 1, medicamento: 1, estagio: 2 };
+        resumo = 'Como o motivo é emergência, priorizamos pacientes com maior urgência clínica, risco e que estejam em estágios iniciais do tratamento.';
+        filtro = p => p.tratamento === 'Quimioterapia';
+      } else if (motivo === 'transporte') {
+        criterio = 'Prioridade para distância, flexibilidade e medicamento X';
+        pesos = { urgencia: 1, distancia: 2, risco: 1, flex: 2, historico: 1, tratamento: 1, medicamento: 2, estagio: 1 };
+        resumo = 'Problemas de transporte favorecem quem mora mais perto, tem flexibilidade de agenda e faz uso do medicamento X.';
+        filtro = p => p.medicamento === 'X';
+      } else if (motivo === 'esquecimento') {
+        criterio = 'Prioridade para histórico de comparecimento e manutenção';
+        pesos = { urgencia: 1, distancia: 1, risco: 1, flex: 1, historico: 3, tratamento: 1, medicamento: 1, estagio: 2 };
+        resumo = 'Para esquecimentos, priorizamos pacientes com melhor histórico de presença e que estejam em manutenção.';
+        filtro = p => p.estagio === 'Manutenção';
+      } else if (motivo === 'efeitos') {
+        criterio = 'Prioridade para pacientes em consolidação ou manutenção, com menor risco';
+        pesos = { urgencia: 1, distancia: 1, risco: -2, flex: 1, historico: 1, tratamento: 1, medicamento: 1, estagio: 2 };
+        resumo = 'Efeitos colaterais graves: priorizamos pacientes em estágios menos intensos (consolidação/manutenção) e com menor risco.';
+        filtro = p => p.estagio === 'Consolidação' || p.estagio === 'Manutenção';
+      } else if (motivo === 'internacao') {
+        criterio = 'Prioridade para pacientes com maior flexibilidade e histórico de comparecimento';
+        pesos = { urgencia: 1, distancia: 1, risco: 1, flex: 3, historico: 2, tratamento: 1, medicamento: 1, estagio: 1 };
+        resumo = 'Internação inesperada: priorizamos pacientes que podem ser chamados rapidamente e têm bom histórico.';
+        filtro = p => p.flex >= 8;
+      } else if (motivo === 'falta_medicamento') {
+        criterio = 'Prioridade para quem utiliza medicamento disponível (X)';
+        pesos = { urgencia: 1, distancia: 1, risco: 1, flex: 1, historico: 1, tratamento: 1, medicamento: 3, estagio: 1 };
+        resumo = 'Falta de medicamento: priorizamos pacientes que usam o medicamento disponível no hospital.';
+        filtro = p => p.medicamento === 'X';
+      } else if (motivo === 'exames') {
+        criterio = 'Prioridade para pacientes com exames em dia e em manutenção';
+        pesos = { urgencia: 1, distancia: 1, risco: 1, flex: 1, historico: 1, tratamento: 1, medicamento: 1, estagio: 2 };
+        resumo = 'Exames pendentes: priorizamos pacientes em manutenção, pois geralmente já têm exames regulares.';
+        filtro = p => p.estagio === 'Manutenção';
+      } else if (motivo === 'familia') {
+        criterio = 'Prioridade para flexibilidade e proximidade';
+        pesos = { urgencia: 1, distancia: 2, risco: 1, flex: 2, historico: 1, tratamento: 1, medicamento: 1, estagio: 1 };
+        resumo = 'Problemas familiares: priorizamos quem mora mais perto e tem flexibilidade de agenda.';
+        filtro = p => p.flex >= 8;
+      } else if (motivo === 'clinica') {
+        criterio = 'Prioridade para menor risco e estágio de manutenção';
+        pesos = { urgencia: 1, distancia: 1, risco: -3, flex: 1, historico: 1, tratamento: 1, medicamento: 1, estagio: 2 };
+        resumo = 'Condição clínica instável: priorizamos pacientes em manutenção e com menor risco.';
+        filtro = p => p.estagio === 'Manutenção';
+      } else {
+        criterio = 'Perfil mais compatível, flexível e medicamento Y';
+        pesos = { urgencia: 1, distancia: 1, risco: 1, flex: 2, historico: 1, tratamento: 1, medicamento: 2, estagio: 1 };
+        resumo = 'Buscamos o paciente mais flexível, compatível e que faz uso do medicamento Y.';
+        filtro = p => p.medicamento === 'Y';
+      }
+      // Calcular score e filtrar
+      const candidatos = pacientes.filter(filtro).map(p => {
+        // Bonus para estágio Indução (mais crítico)
+        let bonusEstagio = (p.estagio === 'Indução') ? 2 : (p.estagio === 'Consolidação' ? 1 : 0);
+        let bonusMedicamento = (motivo === 'transporte' && p.medicamento === 'X') ? 2 : (motivo !== 'transporte' && p.medicamento === 'Y' ? 1 : 0);
+        const score = p.urgencia * pesos.urgencia + p.distancia * (3 - pesos.distancia) + p.risco * pesos.risco + p.flex * pesos.flex + p.historico * pesos.historico + bonusEstagio * pesos.estagio + bonusMedicamento * pesos.medicamento;
+        return { ...p, score: Math.round(score * 10) / 10 };
+      });
+      // Ordenar por score
+      candidatos.sort((a, b) => b.score - a.score);
+      // Montar tabela
+      let table = `<table>`;
+      table += `<tr><th>Paciente</th><th>Urgência</th><th>Distância</th><th>Risco</th><th>Flexibilidade</th><th>Histórico</th><th>Tratamento</th><th>Medicamento</th><th>Estágio</th><th>Score</th></tr>`;
+      candidatos.forEach((c, i) => {
+        table += `<tr><td>${c.nome}${i===0?" ⭐":""}</td><td>${c.urgencia}</td><td>${c.distancia}</td><td>${c.risco}</td><td>${c.flex}</td><td>${c.historico}</td><td>${c.tratamento}</td><td>${c.medicamento}</td><td>${c.estagio}</td><td>${c.score}</td></tr>`;
+      });
+      table += `</table>`;
+      document.getElementById('simTableWrap').innerHTML = table;
+      if (candidatos.length > 0) {
+        document.getElementById('simResult').innerHTML = `<b>Critério:</b> ${criterio}<br><b>Resumo:</b> ${resumo}<br><b>Selecionado:</b> <span style='color:var(--secundaria);font-weight:bold;'>${candidatos[0].nome}</span>`;
+      } else {
+        document.getElementById('simResult').innerHTML = `<b>Nenhum paciente elegível encontrado para este cenário.</b>`;
+      }
+    }
+  </script>
+  
+</body>
+</html>
